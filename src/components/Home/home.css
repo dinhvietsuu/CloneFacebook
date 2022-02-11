@@ -1,5 +1,7 @@
 /** @format */
 
-.ok {
-	color: red;
+.wrap {
+	width: 100%;
+	background-color: yellow;
+	padding: 0 15px;
 }

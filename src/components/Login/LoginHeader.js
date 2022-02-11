@@ -1,19 +1,12 @@
 /** @format */
 
 import React, { useState } from "react";
-import "./loginHeader.css";
 import Register from "../Register/Register";
 
-function LoginHeader({ login }) {
+function LoginHeader({ success, handleSuccess }) {
 	const [showRegister, setShowRegister] = useState(false);
-	const [signUp, setSignUp] = useState(login);
-	console.log(signUp);
 	const handleRegister = () => {
 		setShowRegister(!showRegister);
-	};
-	const handleClick = (e) => {
-		e.preventDefault();
-		setSignUp(true);
 	};
 	return (
 		<>
@@ -40,9 +33,7 @@ function LoginHeader({ login }) {
 							placeholder='Mật khẩu'
 							required
 						/>
-						<button
-							className='btnlogin'
-							onClick={() => handleClick(login)}>
+						<button className='btnlogin' onClick={handleSuccess}>
 							Đăng Nhập
 						</button>
 						<a className='link' href='# '>

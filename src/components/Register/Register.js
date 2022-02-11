@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import "./register.css";
 import { Day, Month, Year } from "./Option";
 function Register({ showRegister, onClose }) {
 	return showRegister ? (

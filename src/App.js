@@ -1,16 +1,27 @@
 /** @format */
 
-import React, { useState } from "react";
-import "./App.css";
-import LoginHeader from "./components/Login/LoginHeader";
+// import React, { useState } from "react";
+import "./Sass/App.scss";
+// import LoginHeader from "./components/Login/LoginHeader";
 import Home from "./components/Home/Home";
+import LoginHeader from "./components/Login/LoginHeader";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 function App() {
-	const [login, setLogin] = useState(false);
+	// const [success, setSuccess] = useState(false);
+	// const handleSuccess = () => {
+	// 	setSuccess(!success);
+	// };
 	return (
 		<div className='wrapper'>
-			{login ? <Home /> : <LoginHeader login={login} />}
+			{/* {!success ? (
+				<LoginHeader success={success} handleSuccess={handleSuccess} />
+			) : (
+				{
+					/* <Home /> */}
+			{/* )}} */}
+			{/* <Home /> */}
+			<LoginHeader />
 		</div>
 	);
 }
